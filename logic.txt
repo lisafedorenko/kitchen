@@ -1,0 +1,12 @@
+# logic for recipes
+
+If Microwave:
+Protein: Vego, Chicken, Fish
+Base: Brown Rice, Quinoa, Potato, Salad
+
+If Toaster
+Protein: ALL
+Base: Bread, Salad
+
+If Sandwich Press:
+
