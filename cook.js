@@ -1,12 +1,31 @@
 //<script language="JavaScript" type="text/javascript">
 
+// VARIABLES
+var myTools = []; 	// utensils chosen
+var myMeat;		// meat chosen
+var myVeg = [];		// vegetables selected
+var myYum = [];		// flavour additions chosen
+
+// FUNCTIONS
+// outputs an array of chosen variables
+function chooseMultiple() {
+
+}
+
+// outputs an single chosen
+function chooseSingle() {
+
+}
+
 function utensils() {
   alert('Hi Nick');
 } 
 
 
+
+// learning blah
 // test button
-function myFunction() {
+/*function myFunction() {
 document.getElementById("demo").innerHTML = "Paragraph changed.";
 }
 
@@ -32,4 +51,4 @@ return result;
 // var myitems = new Array();
 // var selObj = document.getElementById('
 //}
-
+*/
