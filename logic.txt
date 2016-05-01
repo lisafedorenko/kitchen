@@ -18,9 +18,9 @@ Base: Bread=>Toast
 
 Hot water:
 Protein: N/A
-Base: Cous cous
+Base: Cous cous; angel hair pasta
 
 If all:
 Protein: Vego, BBQ Chicken, Smoked Salmon, Left overs, beef, lamb, fresh fish 
-Base: Brown Rice, Quinoa, Potato, Salad, Cous Cous, bread
+Base: Brown Rice, Quinoa, Potato, Salad, Cous Cous, bread, angel hair pasta
 
