@@ -68,7 +68,21 @@ function utensils() {
 } 
 
 // MAIN BODY
-alert(tools);
+document.write('What\'s in your Kitchen?<br/>');
+document.write(tools);
+
+/*
+document.write('Great! What do you feel like?'<br/>);
+document.write(carb);
+document.write('Now choose a base'<br/>);
+document.write(meat);
+document.write('Let's add some veggies'<br/>);
+document.write(veg);
+document.write('And something for a bit of flavour'<br/>);
+document.write(yum);
+*/
+
+
 
 // learning blah
 // test button
