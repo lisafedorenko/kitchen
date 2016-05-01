@@ -67,9 +67,21 @@ function utensils() {
   alert('Hi Nick');
 } 
 
+function makeIntoOptionList(where, list) {
+  var root = document.createElement('select');
+  for (var i = 0; i < list.length; ++i) {
+    var e = list[i];
+    var item = document.createElement('option');
+    item.value = e;
+    item.innerHTML = e;
+    root.appendChild(item);
+  }
+  where.appendChild(root);
+}
+
 // MAIN BODY
-document.write('What\'s in your Kitchen?<br/>');
-document.write(tools);
+document.write('What\'s in your Kitchen?<br/><div id="foo"></div>');
+makeIntoOptionList(document.getElementById('foo'), tools);
 
 /*
 document.write('Great! What do you feel like?'<br/>);
