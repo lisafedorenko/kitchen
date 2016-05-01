@@ -1,4 +1,10 @@
 //<script language="JavaScript" type="text/javascript">
+
+function utensils() {
+  alert('Hi Nick');
+} 
+
+
 // test button
 function myFunction() {
 document.getElementById("demo").innerHTML = "Paragraph changed.";
@@ -21,9 +27,9 @@ return result;
 }
 
 // selects utensils 
-function utensils() {
-var selected = document.getElementById('items');
-var myitems = new Array();
-var selObj = document.getElementById('
-}
+// function utensils() {
+// var selected = document.getElementById('items');
+// var myitems = new Array();
+// var selObj = document.getElementById('
+//}
 
