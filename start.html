@@ -5,6 +5,7 @@
 <head>
 	<title> Corporate Kitchen </title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="cook.js"></script>
 </head>
 
 <body>
@@ -20,6 +21,10 @@
 <h2> What's in your kitchen? </h2>
 
 <p> Select all your appliances to see recipe options </p>
+
+<!-- <p id="demo"> A paragraph. </p>
+<button type="button" onclick="myFunction()"> Try it </button>-->
+
 <select multiple>
 
 	<option value= "water"> Hot Water </option>
@@ -28,6 +33,13 @@
 	<option value= "press"> Sandwich Press </option>
 
 </select>
+
+<button onclick="utensils()"> Click here </button>
+<script> function utensils() {
+  alert('Hi Nick');
+} </script>
+
+<!--<button type="button" onclick="getSelectValues()"> Show selected values </button> -->
 
 <h2> Great! What do you feel like? </h2>
 
