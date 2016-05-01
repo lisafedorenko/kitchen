@@ -1,15 +1,61 @@
 //<script language="JavaScript" type="text/javascript">
 
-// VARIABLES
-var myTools = []; 	// utensils chosen
-var myMeat;		// meat chosen
-var myVeg = [];		// vegetables selected
-var myYum = [];		// flavour additions chosen
+// META VARIABLES
+var tools = [
+  "Hot Water",
+ 	"Toaster",
+	"Microwave",
+	"Sandwich Press"
+]; 								// possible tools	
+var meat = [
+	"Vego",
+	"BBQ Chicken",
+	"Smoked Salmon",
+	"Fresh fish",
+	"Lamb",
+	"Beef",
+	"I have leftover meat!"
+];								// possible meat 
+var carb = [
+	"Brown Rice",
+	"Quinoa",
+	"Cous Cous",
+	"Potato",
+	"Salad",
+	"Sandwich",
+	"Toastie",
+	"Angel Hair Pasta"
+];								// possible carbs 
+var veg = [
+	"Mushrooms",
+	"Capsicum",
+	"Tomato",
+	"Cucumber",
+	"Avacado",
+	"Beans",
+	"Green Salad",
+	"Carrot",
+	"Brocolli"
+];			// possible vegetables 
+var yum = [
+	"Avacado",
+	"Olive oil",
+	"Seasoning",
+	"Chilli Flakes",
+	"Cheese"
+];			// possible flavour additions 
+
+// MY VARIABLES
+var myTools = [];
+var myMeat;
+var myCarb;
+var myVeg = [];
+var myYum = [];
 
 // FUNCTIONS
 // outputs an array of chosen variables
 function chooseMultiple() {
-
+	
 }
 
 // outputs an single chosen
@@ -21,7 +67,8 @@ function utensils() {
   alert('Hi Nick');
 } 
 
-
+// MAIN BODY
+alert(tools);
 
 // learning blah
 // test button
