@@ -3,6 +3,23 @@ body {
 }
 
 h1 {
-	color: navy;
+	color: #005A31;
 	margin-left: 20px;
 }	
+
+h2 {
+	color: #7A8450;
+	margin-left: 20px;
+}	
+
+p {
+	color: #4C2E05;
+	margin-left: 20px;
+}
+/* colour scheme suggestions
+Base one: #c5d5cb #9fa8a3 #e3e0cf #fff
+Base two: #005A31 #A8CD1B #CBE32D #F3FAB6
+Base three: #4C2EO5 #7A8450 #AEBD93 #BEE7B8 #95969D
+Chosen: #005A31 #F0F0F0 #7A8450 #4C2E05
+
+*/
