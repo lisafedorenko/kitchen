@@ -101,16 +101,16 @@ var myYum = [];
 // FUNCTIONS
 // outputs an array of chosen variables
 function getMultiple(select) {
-	var result [];
+	var chosen = [];
 	var options = select && select.options;
 	var opt;
-	for (var i=0, i<options.length; i++) {
+	for (var i=0; i<options.length; i++) {
 		opt = options[i];
 		if (opt.selected) {
-			result.push(opt.value || opt.text);
+			chosen.push(opt.value || opt.text);
 		}
 	}
-	return result;
+	return chosen;
 }
 
 // outputs an single chosen
