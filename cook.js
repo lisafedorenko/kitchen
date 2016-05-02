@@ -98,12 +98,19 @@ var myCarb;
 var myVeg = [];
 var myYum = [];
 
-
-
 // FUNCTIONS
 // outputs an array of chosen variables
-function chooseMultiple() {
-	
+function getMultiple(select) {
+	var result [];
+	var options = select && select.options;
+	var opt;
+	for (var i=0, i<options.length; i++) {
+		opt = options[i];
+		if (opt.selected) {
+			result.push(opt.value || opt.text);
+		}
+	}
+	return result;
 }
 
 // outputs an single chosen
@@ -115,8 +122,11 @@ function utensils() {
   alert('Hi Nick');
 } 
 
-function makeIntoOptionList(where, list) {
+function makeIntoOptionList(where, list, multi) {
   var root = document.createElement('select');
+	if (multi) {
+		root.multiple = true;
+	}
   for (var i = 0; i < list.length; ++i) {
     var e = list[i];
     var item = document.createElement('option');
@@ -127,9 +137,19 @@ function makeIntoOptionList(where, list) {
   where.appendChild(root);
 }
 
-// MAIN BODY
+/************************* MAIN BODY ***************************/
+// Display text
 document.write('What\'s in your Kitchen?<br/><div id="foo"></div>');
-makeIntoOptionList(document.getElementById('foo'), tools);
+
+// Choose utensils
+makeIntoOptionList(document.getElementById('foo'), tools,true);
+var btn = document.createElement("BUTTON");
+btn.appendChild(document.createTextNode("Next"));
+document.body.appendChild(btn);
+// Identify selection
+
+//<button type="button" onclick="myFunction()"> Try it </button>
+
 
 /*
 document.write('Great! What do you feel like?'<br/>);
