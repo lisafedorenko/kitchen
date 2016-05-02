@@ -7,7 +7,7 @@ var tools = [
 	"Microwave",
 	"Sandwich Press"
 ]; 								// possible tools	
-var meat = [
+/*var fullMeat = [
 	"Vego",
 	"BBQ Chicken",
 	"Smoked Salmon",
@@ -16,7 +16,7 @@ var meat = [
 	"Beef",
 	"I have leftover meat!"
 ];								// possible meat 
-var carb = [
+var fullCarb = [
 	"Brown Rice",
 	"Quinoa",
 	"Cous Cous",
@@ -25,7 +25,7 @@ var carb = [
 	"Sandwich",
 	"Toastie",
 	"Angel Hair Pasta"
-];								// possible carbs 
+];	*/							// possible carbs 
 var veg = [
 	"Mushrooms",
 	"Capsicum",
@@ -45,12 +45,60 @@ var yum = [
 	"Cheese"
 ];			// possible flavour additions 
 
+// no appliance necessary
+var baseMeat = [
+	"Vego",
+	"BBQ Chicken",
+	"Smoked Salmon",
+];				
+var baseCarb = [
+	"Salad",
+	"Sandwich",
+];
+
+// with a microwave
+var microMeat = [
+	"I have leftover meat!"
+];								// possible meat 
+var microCarb = [
+	"Brown Rice",
+	"Quinoa",
+	"Potato",
+];
+
+// with a toaster
+var toastMeat = [
+];								// possible meat 
+var toastCarb = [
+	"Toastie",
+];
+
+// with a sandwich press
+var sandMeat = [
+	"Fresh fish",
+	"Lamb",
+	"Beef",
+];								// possible meat 
+var sandCarb = [
+	"Toastie",
+];
+
+// with hot water
+var hotMeat = [
+];								// possible meat 
+var hotCarb = [
+	"Cous Cous",
+	"Angel Hair Pasta"
+];
+
 // MY VARIABLES
 var myTools = [];
 var myMeat;
 var myCarb;
 var myVeg = [];
 var myYum = [];
+
+
 
 // FUNCTIONS
 // outputs an array of chosen variables
