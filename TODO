@@ -1,8 +1,9 @@
 To do:
-Colour scheme choice
-Javascript logic overlay
-Finish logic part
-Add smoked salmon/ left over meats
-Recipe page
 Make mobile friendly
 Sort out h3 why formatting doesn't work
+Make only available carb/ meat based on utensils
+Ensure correct variables are selected
+Print to nice HTML instead of document.write
+Add the pictures
+Go to Recipe page
+Write a recipe
