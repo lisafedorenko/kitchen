@@ -5,7 +5,8 @@ var tools = [
   "Hot Water",
  	"Toaster",
 	"Microwave",
-	"Sandwich Press"
+	"Sandwich Press",
+  "None"
 ]; 								// possible tools	
 /*var fullMeat = [
 	"Vego",
@@ -118,7 +119,7 @@ function chooseSingle() {
 
 }
 
-function utensils() {
+function nick() {
   alert('Hi Nick');
 } 
 
@@ -135,6 +136,7 @@ function makeIntoOptionList(where, list, multi) {
     root.appendChild(item);
   }
   where.appendChild(root);
+	return root;
 }
 
 /************************* MAIN BODY ***************************/
@@ -142,13 +144,51 @@ function makeIntoOptionList(where, list, multi) {
 document.write('What\'s in your Kitchen?<br/><div id="foo"></div>');
 
 // Choose utensils
-makeIntoOptionList(document.getElementById('foo'), tools,true);
+var mytools = makeIntoOptionList(document.getElementById('foo'), tools, true);
 var btn = document.createElement("BUTTON");
 btn.appendChild(document.createTextNode("Next"));
 document.body.appendChild(btn);
-// Identify selection
 
-//<button type="button" onclick="myFunction()"> Try it </button>
+btn.onclick = function () {
+  document.write('What do you feel like today?<br/><div id="foo"></div>');
+  document.write('you have the following tools:');
+  myTools = getMultiple(mytools);
+  document.write(myTools);
+
+	// identify possible meats and carbs - PRESENTLY DONE WITH BASE LIST
+
+	
+var btn1 = document.createElement("BUTTON");
+	btn1.appendChild(document.createTextNode("Next"));
+	document.body.appendChild(btn1);
+
+  btn1.onclick = function () {
+		// choose a meat
+		var mymeat = makeIntoOptionList(document.getElementById('foo'), baseMeat, false);
+		document.write('Now choose a base<br/><div id="foo"></div>');
+		myMeat = getMultiple(mymeat);
+ 		var mycarb = makeIntoOptionList(document.getElementById('foo'), baseCarb, false);
+	  myCarb = getMultiple(mycarb);
+		document.write('Let\'s add some veggies');
+	  var myveg = makeIntoOptionList(document.getElementById('foo'), veg, true);
+	  myVeg = getMultiple(myveg);
+ 		document.write('And something for a bit of flavour');
+ 		var myyum = makeIntoOptionList(document.getElementById('foo'), yum, true);
+  	myYum = getMultiple(myyum);
+  
+		
+    document.write(myTools);
+    document.write(myMeat);
+    document.write(myCarb);
+    document.write(myVeg);
+    document.write(myYum);
+		/*var btn1 = document.createElement("BUTTON");
+		btn1.appendChild(document.createTextNode("Next"));
+		document.body.appendChild(btn1);*/
+  };
+
+//  nick();
+};
 
 
 /*
@@ -163,33 +203,3 @@ document.write(yum);
 */
 
 
-
-// learning blah
-// test button
-/*function myFunction() {
-document.getElementById("demo").innerHTML = "Paragraph changed.";
-}
-
-// selects multiple items
-function getSelectValues(select) {
-var result = [];
-var options = select && select.options;
-var opt;
-
-for (var i=0, iLen=options.length; i<iLen; i++) {
-  opt = options[i];
-  if (opt.selected) {
-  result.push(opt.value || opt.text);
-  }
-}
-alert(result);
-return result;
-}
-
-// selects utensils 
-// function utensils() {
-// var selected = document.getElementById('items');
-// var myitems = new Array();
-// var selObj = document.getElementById('
-//}
-*/
