@@ -157,34 +157,30 @@ btn.onclick = function () {
 
 	// identify possible meats and carbs - PRESENTLY DONE WITH BASE LIST
 
-	
-var btn1 = document.createElement("BUTTON");
+	var mymeat = makeIntoOptionList(document.getElementById('foo'), baseMeat, false);
+	document.write('Now choose a base<br/><div id="foo"></div>');
+ 	var mycarb = makeIntoOptionList(document.getElementById('foo'), baseCarb, false);
+	document.write('Let\'s add some veggies');
+	var myveg = makeIntoOptionList(document.getElementById('foo'), veg, true);
+ 	document.write('And something for a bit of flavour');
+ 	var myyum = makeIntoOptionList(document.getElementById('foo'), yum, true);
+ 
+  var btn1 = document.createElement("BUTTON");
 	btn1.appendChild(document.createTextNode("Next"));
 	document.body.appendChild(btn1);
 
   btn1.onclick = function () {
 		// choose a meat
-		var mymeat = makeIntoOptionList(document.getElementById('foo'), baseMeat, false);
-		document.write('Now choose a base<br/><div id="foo"></div>');
-		myMeat = getMultiple(mymeat);
- 		var mycarb = makeIntoOptionList(document.getElementById('foo'), baseCarb, false);
-	  myCarb = getMultiple(mycarb);
-		document.write('Let\'s add some veggies');
-	  var myveg = makeIntoOptionList(document.getElementById('foo'), veg, true);
-	  myVeg = getMultiple(myveg);
- 		document.write('And something for a bit of flavour');
- 		var myyum = makeIntoOptionList(document.getElementById('foo'), yum, true);
-  	myYum = getMultiple(myyum);
-  
 		
-    document.write(myTools);
+    //document.write(myTools);
+	  myMeat = getMultiple(mymeat);
+		myCarb = getMultiple(mycarb);
+		myVeg = getMultiple(myveg);
+  	myYum = getMultiple(myyum);
     document.write(myMeat);
     document.write(myCarb);
     document.write(myVeg);
     document.write(myYum);
-		/*var btn1 = document.createElement("BUTTON");
-		btn1.appendChild(document.createTextNode("Next"));
-		document.body.appendChild(btn1);*/
   };
 
 //  nick();
