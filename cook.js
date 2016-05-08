@@ -1,13 +1,13 @@
 //<script language="JavaScript" type="text/javascript">
 
 // META VARIABLES
-var tools = [
+/*var tools = [
   "Hot Water",
  	"Toaster",
 	"Microwave",
 	"Sandwich Press",
   "None"
-]; 								// possible tools	
+]; */								// possible tools	
 /*var fullMeat = [
 	"Vego",
 	"BBQ Chicken",
@@ -27,7 +27,7 @@ var fullCarb = [
 	"Toastie",
 	"Angel Hair Pasta"
 ];	*/							// possible carbs 
-var veg = [
+/*var veg = [
 	"Mushrooms",
 	"Capsicum",
 	"Tomato",
@@ -98,7 +98,7 @@ var myMeat;
 var myCarb;
 var myVeg = [];
 var myYum = [];
-
+*/
 // FUNCTIONS
 // outputs an array of chosen variables
 function getMultiple(select) {
