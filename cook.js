@@ -139,66 +139,59 @@ function makeIntoOptionList(where, list, multi) {
 	return root;
 }
 
-/************************* MAIN BODY ***************************/
+/***************************************************************/
+/*******************       MAIN BODY       *********************/
+/***************************************************************/
 // Display text
-// document.write('What\'s in your Kitchen?<br/><div id="foo"></div>');
 document.getElementById('title').innerHTML = "What\'s in your Kitchen?";
-
 var content = document.getElementById('body');
+
 // Choose utensils
 var mytools = makeIntoOptionList(content, tools, true);
 var btn = document.createElement("BUTTON");
-//btn.appendChild(document.createTextNode("Next"));
 btn.innerHTML = "Next";
 content.appendChild(btn);
 
 btn.onclick = function () {
   document.getElementById('title').innerHTML = "What do you feel like today?";
-  content.innerHTML = 'you have the following tools:';
-  //document.write('What do you feel like today?<br/><div id="foo"></div>');
-  //document.write('you have the following tools:');
+  document.getElementById('title1').innerHTML = "Now choose a base";
+  document.getElementById('title2').innerHTML = "Let's add some veggies";
+  document.getElementById('title3').innerHTML = "And some yum";
+  //content.innerHTML = 'you have the following tools:';
   myTools = getMultiple(mytools);
   content.innerHTML = myTools;
-	//document.write(myTools);
 
 	// identify possible meats and carbs - PRESENTLY DONE WITH BASE LIST
 
 	var mymeat = makeIntoOptionList(content, baseMeat, false);
-	var mycarb = makeIntoOptionList(content, baseCarb, false);
-	var myveg = makeIntoOptionList(content, veg, true);
-	var myyum = makeIntoOptionList(content, yum, true);
-	/*var mymeat = makeIntoOptionList(document.getElementById('foo'), baseMeat, false);
-	document.write('Now choose a base<br/><div id="foo"></div>');
- 	var mycarb = makeIntoOptionList(document.getElementById('foo'), baseCarb, false);
-	document.write('Let\'s add some veggies');
-	var myveg = makeIntoOptionList(document.getElementById('foo'), veg, true);
- 	document.write('And something for a bit of flavour');
- 	var myyum = makeIntoOptionList(document.getElementById('foo'), yum, true);
-*/ 
+	var mycarb = makeIntoOptionList(document.getElementById('body1'), baseCarb, false);
+	var myveg = makeIntoOptionList(document.getElementById('body2'), veg, true);
+	var myyum = makeIntoOptionList(document.getElementById('body3'), yum, true);
+ 
   var btn1 = document.createElement("BUTTON");
-	//btn1.appendChild(document.createTextNode("Next"));
 	btn1.innerHTML = "Next";
-	content.appendChild(btn1);
-  //document.body.appendChild(btn1);
+	document.getElementById('body3').appendChild(btn1);
 
   btn1.onclick = function () {
 		// choose a meat
 		
     document.getElementById('title').innerHTML = "Great - today we are making - MYSTERY FOOD!";
-    //document.write(myTools);
 	  myMeat = getMultiple(mymeat);
 		myCarb = getMultiple(mycarb);
 		myVeg = getMultiple(myveg);
   	myYum = getMultiple(myyum);
     
-    content.innerHTML = myMeat;
+		document.getElementById('body').innerHTML = myMeat;
+		document.getElementById('body1').innerHTML = myCarb;
+		document.getElementById('body2').innerHTML = myVeg;
+		document.getElementById('body3').innerHTML = myYum;
+		document.getElementById('title1').innerHTML = "";
+		document.getElementById('title2').innerHTML = "";
+		document.getElementById('title3').innerHTML = "";
+    /*content.innerHTML = myMeat;
     content.innerHTML = myCarb;
     content.innerHTML = myVeg;
-    content.innerHTML = myYum;
-    /*document.write(myMeat);
-    document.write(myCarb);
-    document.write(myVeg);
-    document.write(myYum);*/
+    content.innerHTML = myYum;*/
   };
 
 //  nick();
