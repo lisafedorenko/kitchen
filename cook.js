@@ -33,9 +33,9 @@ function makeIntoOptionList(where, list, multi) {
 	return root;
 }
 
-function contains (k) {
-	for (var i = 0; i < this.length; i++) {
-		if (this[i] === k || (this[i] !== this[i] && k !== k )) {
+function contains (j,k) {
+	for (var i = 0; i < j.length; i++) {
+		if (j[i] === k || (j[i] !== j[i] && k !== k )) {
 			return true;
 		}
 	}
@@ -73,7 +73,17 @@ btn.onclick = function () {
 	var mymeat = makeIntoOptionList(content, baseMeat, false);
 	var mycarb = makeIntoOptionList(content1, baseCarb, false);
 
-	//content.innerHTML = myTools.contains("Microwave");
+	if(contains(myTools,"Microwave")) {
+		baseMeat.push("Left overs");
+		baseCarb.push("Brown rice");
+		baseCarb.push("Quinoa");
+		baseCarb.push("Potato");
+		content.innerHTML = baseCarb;
+	}
+	else {
+		content.innnerHTML = "I do not have a Microwave";
+  };
+
 /*# logic for recipes
 
 If none:
