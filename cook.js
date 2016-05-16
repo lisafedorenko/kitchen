@@ -60,6 +60,13 @@ var btn = document.createElement("BUTTON");
 btn.innerHTML = "Next";
 content.appendChild(btn);
 
+// add an image
+var img = document.createElement("img");
+img.src = "images/beef2.jpg";
+img.style.height = "100px";
+img.style.width= "100px";
+content1.appendChild(img);
+
 // Choose the meal
 btn.onclick = function () {
   document.getElementById('title').innerHTML = "What do you feel like today?";
