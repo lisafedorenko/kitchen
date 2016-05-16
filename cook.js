@@ -70,46 +70,33 @@ btn.onclick = function () {
   content.innerHTML = myTools;
 
 	// identify possible meats and carbs - PRESENTLY DONE WITH BASE LIST
-	var mymeat = makeIntoOptionList(content, baseMeat, false);
-	var mycarb = makeIntoOptionList(content1, baseCarb, false);
-
 	if(contains(myTools,"Microwave")) {
 		baseMeat.push("Left overs");
 		baseCarb.push("Brown rice");
 		baseCarb.push("Quinoa");
 		baseCarb.push("Potato");
 		content.innerHTML = baseCarb;
-	}
-	else {
-		content.innnerHTML = "I do not have a Microwave";
-  };
+	};
 
-/*# logic for recipes
+	if(contains(myTools,"Toaster")) {
+		baseCarb.push("Toast");
+	};
+	
+	if(contains(myTools,"Sandwich Press")) {
+		baseMeat.push("Beef");
+		baseMeat.push("Lamb");
+		baseMeat.push("Fresh Fish");
+		baseCarb.push("Toast");
+	};
 
-If none:
-Protein: Vego, BBQ Chicken, Smoked salmon
-Base: Salad, Bread
+	if(contains(myTools,"Hot Water")) {
+		baseCarb.push("Cous cous");
+		baseCarb.push("Angel Hair Pasts");
+	};
+	
+	var mymeat = makeIntoOptionList(content, baseMeat, false);
+	var mycarb = makeIntoOptionList(content1, baseCarb, false);
 
-If Microwave:
-Protein: Left overs
-Base: Brown Rice, Quinoa, Potato
-
-If Toaster:
-Protein: N/A
-Base: Bread=> Toast
-
-If Sandwich Press:
-Protein: Beef, Lamb, Fresh fish
-Base: Bread=>Toast
-
-Hot water:
-Protein: N/A
-Base: Cous cous; angel hair pasta
-
-If all:
-Protein: Vego, BBQ Chicken, Smoked Salmon, Left overs, beef, lamb, fresh fish 
-Base: Brown Rice, Quinoa, Potato, Salad, Cous Cous, bread, angel hair pasta
-*/
 	var myveg = makeIntoOptionList(content2, veg, true);
 	var myyum = makeIntoOptionList(content3, yum, true);
 
