@@ -71,12 +71,12 @@ content1.appendChild(img);
 btn.onclick = function () {
   document.getElementById('title').innerHTML = "What do you feel like today?";
   document.getElementById('title1').innerHTML = "Now choose a base";
-  document.getElementById('title2').innerHTML = "Let's add some veggies";
-  document.getElementById('title3').innerHTML = "And some yum";
+  //document.getElementById('title2').innerHTML = "Let's add some veggies";
+  //document.getElementById('title3').innerHTML = "And some yum";
   myTools = getMultiple(mytools);
   content.innerHTML = myTools;
 
-	// identify possible meats and carbs - PRESENTLY DONE WITH BASE LIST
+	// Identify possible meats and carbs 
 	if(contains(myTools,"Microwave")) {
 		baseMeat.push("Left overs");
 		baseCarb.push("Brown rice");
@@ -104,8 +104,8 @@ btn.onclick = function () {
 	var mymeat = makeIntoOptionList(content, baseMeat, false);
 	var mycarb = makeIntoOptionList(content1, baseCarb, false);
 
-	var myveg = makeIntoOptionList(content2, veg, true);
-	var myyum = makeIntoOptionList(content3, yum, true);
+	//var myveg = makeIntoOptionList(content2, veg, true);
+	//var myyum = makeIntoOptionList(content3, yum, true);
 
 	// Save selection 
   var btn1 = document.createElement("BUTTON");
@@ -118,8 +118,8 @@ btn.onclick = function () {
     document.getElementById('title').innerHTML = "Great - today we are making - MYSTERY FOOD!";
 	  myMeat = getMultiple(mymeat);
 		myCarb = getMultiple(mycarb);
-		myVeg = getMultiple(myveg);
-  	myYum = getMultiple(myyum);
+		//myVeg = getMultiple(myveg);
+  	//myYum = getMultiple(myyum);
     
 		content.innerHTML = myMeat;
 		content1.innerHTML = myCarb;
