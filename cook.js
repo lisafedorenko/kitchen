@@ -103,12 +103,16 @@ btn.onclick = function () {
 	
 	// print the Meat options
 	var mymeat = makeIntoOptionList(content, baseMeat, false);
-	/*for (var i = 0; i < j.length; i++) {
-		if (j[i] === k || (j[i] !== j[i] && k !== k )) {
-			return true;
-		}
-	}
-	return false;*/
+	//for (var i = 0; i < baseMeat.length; i++) {
+	//	document.createElement("img").src(LOOK UP CORRESPONDING ELEMENT)
+	//}
+// add an image
+/*var img = document.createElement("img");
+img.src = "images/beef2.jpg";
+img.style.height = "100px";
+img.style.width= "100px";
+content1.appendChild(img);*/
+
 
 	var mycarb = makeIntoOptionList(content1, baseCarb, false);
 
