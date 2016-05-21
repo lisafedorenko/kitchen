@@ -101,7 +101,15 @@ btn.onclick = function () {
 		baseCarb.push("Angel Hair Pasts");
 	};
 	
+	// print the Meat options
 	var mymeat = makeIntoOptionList(content, baseMeat, false);
+	/*for (var i = 0; i < j.length; i++) {
+		if (j[i] === k || (j[i] !== j[i] && k !== k )) {
+			return true;
+		}
+	}
+	return false;*/
+
 	var mycarb = makeIntoOptionList(content1, baseCarb, false);
 
 	//var myveg = makeIntoOptionList(content2, veg, true);

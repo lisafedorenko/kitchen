@@ -8,16 +8,16 @@ var tools = [
 	"Sandwich Press",
   "None"
 ]; 								// possible tools	
-/*var fullMeat = [
-	"Vego",
-	"BBQ Chicken",
-	"Smoked Salmon",
-	"Fresh fish",
-	"Lamb",
-	"Beef",
-	"I have leftover meat!"
+var fullMeat = [
+	["Vego", "vego.jpg"],
+	["BBQ Chicken", "chicken.gif"],
+	["Smoked Salmon", "salmon.jpg"],
+	["Fresh fish", "fish.jpg"],
+	["Lamb", "lamb.jpg"],
+	["Beef", "beef.jpg"],
+	["I have leftover meat!", "beef2.jpg"],
 ];								// possible meat 
-var fullCarb = [
+/*var fullCarb = [
 	"Brown Rice",
 	"Quinoa",
 	"Cous Cous",
@@ -27,7 +27,7 @@ var fullCarb = [
 	"Toastie",
 	"Angel Hair Pasta"
 ];	*/							// possible carbs 
-var veg = [
+/*var veg = [
 	"Mushrooms",
 	"Capsicum",
 	"Tomato",
@@ -45,7 +45,7 @@ var yum = [
 	"Chilli Flakes",
 	"Cheese"
 ];			// possible flavour additions 
-
+*/
 // no appliance necessary
 var baseMeat = [
 	"Vego",
