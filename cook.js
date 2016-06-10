@@ -65,7 +65,7 @@ var img = document.createElement("img");
 img.src = "images/beef2.jpg";
 img.style.height = "100px";
 img.style.width= "100px";
-content1.appendChild(img);
+//content1.appendChild(img);
 
 // Choose the meal
 btn.onclick = function () {
@@ -103,6 +103,7 @@ btn.onclick = function () {
 	
 	// print the Meat options
 	var mymeat = makeIntoOptionList(content, baseMeat, false);
+  content.appendChild(img);
 	//for (var i = 0; i < baseMeat.length; i++) {
 	//	document.createElement("img").src(LOOK UP CORRESPONDING ELEMENT)
 	//}
