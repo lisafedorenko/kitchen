@@ -12,13 +12,13 @@ var lamb = {tools: "sandwichPress", method: "Heat up sandwich press and line the
 var fish = {tools: "sandwichPress", method: "Heat up sandwich press. Take your fish fillet and rub both sides with oil, dress with salt pepper/ spices to your liking. Lay salmon onto a sheet of al foil skin side down. Cut lemon slices and lay over the fish. Wrap up the al foil from both sides then seal the edges to create a parcel. Place this in the sandwich press. Fish will be cooked rare within 3 minutes, and cooked thoroughly within 6 minutes. Remove at a point to suit your tastes, unwrap the salmon and serve."}}
 
 // Carbs 
-var salad = {tools:""}
-var soup = {tools:"hotWater"}
-var potato = {tools:"microwave"}
-var rice = {tools:"microwave"}
-var quinoa = {tools:"microwave"}
-var cousCous = {tools:"hotWater"}
-var vermicelli = {tools:"hotWater"}
-var riceNoodles = {tools:"hotWater"}
+var salad = {tools:"", method: "Wash all vegies. Line a large bowl with torn up leafy veggies. Chop up fresh veggies. Add your chosen protein. Dress with lemon juice and a table spoon of olive oil. If you'd like to make this more filling - try adding some crutons (make your own by crunching toast), crushed papdums (30secs in a microwave), corn, pumpkin, cheese - parmeson and goats cheese both work great"}
+var udonSoup = {tools:"hotWater", method: "Place 1 or 2 stock cubes in a large bowl and fill with boiling water. Stir through thoroughly until disolved. Add udon noodles and cover with a plate or tea towel, set aside for 2 minutes. Chop up some veggies - try mushrooms, radish, sprouts, shallots, capsicum. Once 2 minutes has passed stir through to break up the udon and add the veggies. Top up with your chosen protein. Note at this point you can add thinly sliced raw beef if you have used boiling water."}
+var potato = {tools:"microwave", method: "Wash potato, poke holes into it with a fork at least 6 times from different angles. Wrap in a wet paper towel and put on a plate. Microwave for 3 minutes, turn over and microwave another 3 minutes. Remove and unwrap, poke with a fork to ensure it is soft and cooked through. If not cook for another minute or 2. Note add a minute each side if you are using sweet potato. Serve on a plate or bowl. Cut open in an X shape and pull all 4 sides appart. Add a spoon of butter to melt through, now add grated cheese to melt on top. At this stage add your meat of choice then top with chopped veggies and sour-cream/ spices if on hand"}
+var rice = {tools:"microwave", method: ""}
+var quinoa = {tools:"microwave", method: ""}
+var cousCous = {tools:"hotWater", method: ""}
+var vermicelli = {tools:"hotWater", method: ""}
+var riceNoodles = {tools:"hotWater", method: ""}
 var angelHair = {tools:"hotWater"}
 var toast = {tools:"sandwichPress"}
