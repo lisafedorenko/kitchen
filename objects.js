@@ -13,7 +13,7 @@ var CARB = "carb";
 // Types of tool.
 var HOT_WATER = "hotWater";
 var MICROWAVE = "microwave";
-var SANDWICH_PRESS = "sandwitchPress";
+var SANDWICH_PRESS = "sandwichPress";
 
 // Data representation for a single food item.
 function Food(name, type, tools, method, image) {
@@ -39,9 +39,10 @@ function Pantry() {
 
 Pantry.prototype.getType = function(type) {
   var results = [];
-  for (var food in this.contents) {
+  for (var i = 0; i < this.contents.length; ++i) {
+    var food = this.contents[i];
     if (food.type == type) {
-     results.append(food);
+     results.push(food);
     }
   }
   return results;
