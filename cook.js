@@ -61,11 +61,11 @@ btn.innerHTML = "Next";
 content.appendChild(btn);
 
 // add an image
-var img = document.createElement("img");
+/*var img = document.createElement("img");
 img.src = "images/beef2.jpg";
 img.style.height = "100px";
 img.style.width= "100px";
-//content1.appendChild(img);
+/*//content1.appendChild(img);
 
 // Choose the meal
 btn.onclick = function () {
